@@ -1,9 +1,7 @@
 let selectScore = document.querySelector('#score');
 let selectMsg = document.querySelector('#msg');
-
 let input1 = document.getElementById('text1');
 let input2 = document.getElementById('text2');
-
 let submitBtn = document.getElementById('btn');
 
 // Required field and Button disabled state.
@@ -16,6 +14,7 @@ function checkInputs() {
   }
 }
 
+// Check input value
 input1.addEventListener('input', checkInputs);
 input2.addEventListener('input', checkInputs);
 
