@@ -3,10 +3,25 @@
 body {
   background-image: url(https://img.freepik.com/free-vector/blurred-valentine-s-day-wallpaper_23-2148819570.jpg);
   background-repeat: no-repeat;
-  height: 100%;
+  height: 100vh;
   background-position: center;
   background-size: cover;
 }
+/* Mobile Screen (min-width: 480px) */
+@media screen and (min-width: 480px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    height: 250px;
+    width: 250px;
+  }
+  .sub-container {
+    height: 75px;
+    width: 200px;
+  }
+}
+
 .container {
   height: 500px;
   width: 500px;
