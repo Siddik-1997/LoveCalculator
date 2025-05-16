@@ -4,7 +4,7 @@ let input1 = document.getElementById('text1');
 let input2 = document.getElementById('text2');
 let submitBtn = document.getElementById('btn');
 
-// Required field and Button disabled state.
+// Required fields and Button disabled state.
 
 function checkInputs() {
   if (input1.value && input2.value) {
@@ -18,17 +18,7 @@ function checkInputs() {
 input1.addEventListener('input', checkInputs);
 input2.addEventListener('input', checkInputs);
 
-document.querySelector('#btn').onclick = function () {
-  // let name1 = input1.value.trim();
-  // let name2 = input2.value.trim();
-  // if (
-  //   name1.includes('Siddik') ||
-  //   (name1.includes('Selina') && name2.includes('Siddik')) ||
-  //   name2.includes('Selina')
-  // ) {
-  //   selectScore.innerHTML = 'Your Love Score is:' + '100' + '%';
-  //   selectMsg.innerHTML = 'Love Statement: True Love';
-  // } else {
+submitBtn.addEventListener('click', () => {
   let score = Math.ceil(Math.random() * 100);
   if (score >= 90) {
     selectScore.innerHTML = 'Your Love Score is:' + ' ' + score + '%';
@@ -46,8 +36,8 @@ document.querySelector('#btn').onclick = function () {
     selectScore.innerHTML = 'Your Love Score is:' + ' ' + score + '%';
     selectMsg.innerHTML = 'Love Statement: Just Friends 😊';
   }
-  //Clear field value
+  //Clear fields value
   input1.value = '';
   input2.value = '';
   submitBtn.disabled = true;
-};
+});
