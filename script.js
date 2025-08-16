@@ -14,7 +14,7 @@ function checkInputs() {
   }
 }
 
-// Check input value
+// Check input field value
 input1.addEventListener('input', checkInputs);
 input2.addEventListener('input', checkInputs);
 
